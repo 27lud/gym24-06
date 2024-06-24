@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    color: black;
+}
+
+.logo {
+    height: 52%;
+    width: 28%;
+    margin: 4% 3% 4% 2%;
+}
+
+.botones {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    right: 0%;
+    top: 2%;
+    z-index: 1;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+
+.botones .menu {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+    font-size: x-large;
+    color: white;
+    list-style: none;
+}
+
+.boton-menu {
+    padding: 6%;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-nav {
+    color: rgb(255, 0, 0);
+    font-size: 100%;
+    font-weight: bold;
+    padding: 2%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+a { 
+    color: rgb(231, 230, 230);
+    text-decoration: none;
+}
+
+.seccion-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: 900;
+    margin: 5% 0 3% 0;
+}
+
+header { 
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    color: white;
+    background-color: rgb(114, 2, 2);
+    font-size: x-large;
+    text-align: center;
+    height: 20%;
+    width: 94%;
+    margin: 4% 2% 0 2%;
+    padding: 1%;
+    border-radius: 6ch;
+}
+/*menu*/
+.menu img {
+    height: 32px;
+    width: 32px;
+}
+
+.mostrarMenu {
+    display: flex;
+}
+
+.modo-oscuro {
+    background-color: black;
+    color: white;
+}
+/*inicio*/
+.contenedor-actividades {
+    margin: 4% 0 8% 0;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);
+    text-align: center;
+    justify-items: center;
+} 
+
+.contenedor-actividades .actividad {
+    margin: 7%;
+    padding: 3% 7% 15% 7%;
+    border: solid 1px white;
+    border-radius: 2%;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+    transition: all ease-in 0.2s;
+    cursor: pointer;
+}
+
+.contenedor-actividades div h3 {
+    background-color: #eeeeee;
+    border-radius: 75% 10%;
+    font-weight: 900;
+    color: #ff0000;
+    padding: 4%;
+}
+
+.contenedor-actividades div p {
+    font-size: medium;
+    font-weight: 300;
+    padding-top: 2%;
+    letter-spacing: 1px;
+}
+
+.tabla-ejercicios {
+    font-size: 92%;
+    font-weight: 800;
+    text-align: left;
+    padding: 0 1.5%;
+    border-left-color: white; 
+}
+
+#btn-incluir {
+    width: 80%;
+    margin: 5% 3%;
+    padding: 2%;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 96%;
+    cursor: pointer;
+    transition: background-color 0.3s
+}
+
+.btn-eliminar, .btn-editar{
+    width: 2.6em;
+    height: 2.6em;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+/*horarios*/
+.tablas {
+    display: flex;
+}
+
+table {
+    width: 100%;
+    justify-content: center;
+    margin: 5% 4% 0 4%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd; 
+}
+
+th, td {
+    font-size: 84%;
+    font-weight: 300;
+    padding: 1.5%;
+    text-align: center;
+    border-bottom: 1px solid #ddd;  
+    border-left: 1px solid #ddd;
+}
+
+th {
+    font-size: 100%;
+    font-weight: 700;
+    background-color: rgb(207, 22, 22);
+    text-align: left;
+    color: white;
+    padding: 1.1% 2.5%;
+    border-radius: 7px;
+}
+
+.actividad-tabla-horarios {
+    font-size: 85%;
+    font-weight: 800;
+    text-align: left;
+    padding: 0 2.5%;
+    border-left-color: white; 
+}
+
+/*tarifas*/
+.contenedor-tarifas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    margin-top: 5%;
+}
+
+.tarifas {
+    color: white;
+    background-color: rgb(61, 60, 60);
+    border-radius: 5px;
+    width: 85%;
+    height: 90%;
+    font-family: "Roboto";
+    padding: 3%;
+    margin: 5% 1% 0 1%;
+    box-shadow: 2px 2px 10px black;
+}
+
+h4 {
+    color:rgb(121, 118, 118);
+}
+
+.tarifa-actividad {
+    color: white;
+    padding: 3% ;
+    border-bottom: solid 2px white;
+    font-size: xx-large;
+    font-weight: 800;
+    margin: 0;
+}
+
+div.tarifas P.tarifa-precio {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 600;
+    padding: 1%;
+    margin: 3% 0 4% 0;
+}
+
+div.tarifas P {
+    color: white;
+    text-align: center;
+    font-size: small;
+    margin: 0;
+}
+
+.tarifa-lista {
+    color: white;
+    margin: 8%;
+    font-weight: 500;
+    font-size: large;
+}
+
+.tarifas button {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: large;
+    padding: 5%;
+    margin: 5% 9% 6% 9%;
+    font-weight: 100;
+    background-color: rgb(62, 233, 167);
+    border-radius: 4ch;
+}
+/*nuestros productos*/
+.contenedor-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-productos {    
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    height: 100%;
+    width: 100%;
+}
+
+.productos {
+    color: black;
+    font-size: 90%;
+    border-radius: 2%;
+    margin: 8% 1% 2% 2%;
+    width: 85%;
+    height: 40%;
+    background-color: #bdbcc0;
+    text-align: center;
+    box-shadow: 2px 2px 15px rgb(48, 47, 47);
+    cursor: pointer;
+}
+
+.precio-producto {
+    color: rgb(92, 92, 92);
+    font-size: medium;
+    font-weight: 900;
+}
+/*contacto*/
+.formulario {
+    margin-top: 5%;
+    padding: 2% 4%;
+    border-radius: 3%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.formulario .grupo-formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.campo-usuario {
+    width: 80%;
+    padding: 3%;
+    border: 1px solid #cccccc;
+    border-radius: 1ch;
+    font-size: 96%;
+    box-sizing: border-box;
+    border-color: #ff0000;
+}
+
+#btn-enviar {
+    width: 80%;
+    margin-top: 2%;
+    padding: 2%;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 96%;
+    cursor: pointer;
+    transition: background-color 0.3s
+}
+
+
+/*footer*/
+footer { 
+    background-color: black;
+    margin-top: 15%;
+    width: 100%;
+    border-top: 1px solid rgb(102, 102, 102);
+    padding-top: 3%;
+}
+
+footer p {
+    border-top: 1PX solid rgb(102, 102, 102);
+    color: rgb(201, 198, 198);
+    padding: 2%;
+    margin: 0;
+    font-size: small;
+    text-align: center;
+}
+
+@media only screen and (min-width:660px) {
+
+    header { 
+        display: flex;
+        justify-content: left;
+    }
+
+    .logo {
+        height: 60%;
+        width: 20%;
+    }
+
+    .contenedor-encabezado {
+        align-items: end;
+        display: flex;
+        background-color: black;
+        justify-content: space-between; 
+        padding: 0.4%;
+    }
+
+    .boton-menu {
+        display: none;
+    }
+
+    .botones {
+        width: 10%;
+        height: 10%;
+        text-align: right; 
+        display: flex;
+        left: 65%;   
+    }
+
+    .botones .menu {
+        display: flex;
+        flex-direction: row;
+        font-size: medium;
+        list-style: none;
+    }
+
+    .btn-nav:hover {
+        transform: scale(1.03);
+    }
+
+    a:hover { 
+        color: rgb(128, 126, 126);
+    }
+
+    .icono {
+        padding: 1%;
+        cursor: pointer;
+    }
+    /*Inicio*/
+    .contenedor-actividades {
+        margin-top: 4%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        text-align: center;
+    } 
+
+    .contenedor-actividades div:hover {
+        transform: scale(1.1);
+    }
+    /*Horarios*/
+    .tabla-horarios {
+        display: flex;
+        justify-content: center;
+    }
+    /*tarifas*/
+    .contenedor-tarifas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /*nuestros productos*/
+    .contenedor-productos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .productos:hover {
+        transform: scale(1.02);
+    }
+    /*contacto*/
+    .contenedor-formulario {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+

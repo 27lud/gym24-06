@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Panther's Sport Gym</title>
+</head>
+
+<body class="body">
+    <section class="contenedor-encabezado">
+        <header>
+            <div class="seccion-logo">
+                <img class="logo" src="imagenes/pantera.jpeg" alt="Panther's Sport Gym">
+                <div class="titulo">
+                    <h1 class="titulo">PANTHER'S</h1>
+                    <h3 class="titulo">Sport Gym</h3>
+                </div>
+            </div>
+            <div class="boton-menu" id="boton-menu">
+                <img src="./imagenes/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="icono">
+            </div>
+        </header>
+
+        <nav class="botones">
+            <ul class="menu">
+                <li class="btn-nav" id="inicio">Inicio</li>
+                <li class="btn-nav" id="Horarios"><a href="carpetashtml/horarios.html">Horarios</a></li>
+                <li class="btn-nav" id="Tarifas"><a href="carpetashtml/tarifas.html">Tarifas</a></li>
+                <li class="btn-nav" id="Nuestros productos"><a href="carpetashtml/nuestrosproductos.html">Nuestros productos</a></li>
+                <li class="btn-nav" id="Contacto"><a href="carpetashtml/contacto.html">Contacto</a></li>
+                <li class="icono" id="cambiarModo">
+                    <img id="modoIcono" src="imagenes/dark_mode_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="icono">
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <h2>ACTIVIDADES</h2>
+    <section class="contenedor-actividades">
+        <div class="actividad">
+            <h3>MUSCULACIÓN</h3>
+            <p>
+                Desarrollá fuerza y tonificá tus músculos con equipamiento moderno y entrenadores expertos. La
+                musculación es una forma de ejercicio que se enfoca en desarrollar y fortalecer los músculos del cuerpo.
+                A través de ejercicios específicos y del uso de pesas, la musculación busca aumentar la masa muscular y
+                mejorar la resistencia.
+            </p>
+        </div>
+        <div class="actividad">
+            <h3>FUNCIONAL</h3>
+            <p>
+                Mejorá tu agilidad y resistencia con entrenamientos versátiles y desafiantes adaptados a todos los
+                niveles.El entrenamiento funcional se caracteriza por adaptarse a los movimientos naturales del cuerpo
+                humano.
+            </p>
+        </div>
+        <div  class="actividad">
+            <h3>SPINNING</h3>
+            <p>
+                Pedaleá hacia tus objetivos al ritmo de la música en una clase de 60 Minutos. Con SPINNING te acercamos
+                el entrenamiento de ciclismo más efectivo del mundo.
+                Un ejercicio aeróbico y cardiovascular que se realiza sobre una bicicleta estática en el que se trabaja
+                el tren inferior: las piernas y los glúteos.
+            </p>
+        </div>
+        <div  class="actividad">
+            <h3>CROSSFIT</h3>
+            <p>
+                CrossFit es una técnica de entrenamiento que conecta movimientos de diferentes disciplinas, tales como
+                la
+                halterofilia, el entrenamiento metabólico o el gimnástico. Consiste en acometer un programa de
+                ejercicios (flexiones, tracción, etc), en un tiempo determinado y con un número definido de veces.
+            </p>
+        </div >
+        <div class="actividad">
+            <h3>PILATES</h3>
+            <p>
+                Pilates es un método de entrenamiento mental y físico. Siendo una mezcla de gimnasia y yoga, se consigue
+                tonificar los músculos, además de ganar equilibrio, elasticidad y fuerza. En la técnica de pilates
+                también se ve involucrado el control de la respiración, siendo este uno de los pilares fundamentales de
+                este método.
+            </p>
+        </div>
+        <div  class="actividad">
+            <h3>HIIT</h3>
+            <p>
+                Una sesión la cual consiste de varias rondas de ráfagas cortas y de alta intensidad, que por lo general
+                no duran más de 20 segundos y que son acompañadas de breves períodos de descanso. Este entrenamiento que
+                trabaja el sistema cardiovascular, dura en total 30 minutos y brinda excelentes resultados
+            </p>
+        </div>
+    </section>
+
+</section>
+<h2>CREA TU PROPIA RUTINA</h2>
+<section class="contenedor-formulario">
+    <form class="formulario">
+        <div class="grupo-formulario">
+            <label>Ejercicio:</label>
+            <input type="text" id="texto-ejercicio" class="campo-usuario">
+        </div>
+        <div class="grupo-formulario">
+            <label>Series:</label>
+            <input type="number" id="texto-series" class="campo-usuario">
+        </div>
+        <div class="grupo-formulario">
+            <label>Repeticiones:</label>
+            <input type="number" id="texto-repeticiones" class="campo-usuario">
+        </div>
+        <div class="grupo-formulario">
+            <label>Carga:</label>
+            <input type="text" id="texto-cargas" class="campo-usuario">
+        </div>
+        <button type="submit" id="btn-incluir">Agregar ejercicio</button>
+        <p id="mensaje-rutina"></p>
+    </form>
+</section>
+
+<section class="tablas">
+    <table>
+        <thead >
+            <tr>
+                <th>EJERCICIOS</th>
+                <th>SERIES</th>
+                <th>REPETICIONES</th>
+                <th>CARGAS</th> 
+                <th>EDITAR</th>
+                <th>ELIMINAR</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-ejercicios" class="tabla-ejercicios"> 
+        
+        </tbody>
+    </table>
+</section>
+    <footer>
+        <p>Copyright©2024 Panther's Sport Gym.</p>
+    </footer>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
